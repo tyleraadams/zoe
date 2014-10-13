@@ -4,7 +4,8 @@ body {
 	padding:0;
 	width:100%;
 	color: black;
-	background: #ffe4c4;
+	background: snow;
+	/*#ffe4c4;*/
 }
 
 ul {
@@ -24,8 +25,16 @@ li {
 	display:inline;
 	margin-right:50px;
 }
-
 nav {
+	visibility: hidden;
+	z-index:1000;
+}
+
+h1 {
+	margin:0;
+}
+
+.past-photo {
 	border-bottom: solid 1px #cccccc ;
 	padding:10px;
 	position:fixed;
@@ -33,6 +42,7 @@ nav {
 	width:100%;
 	top:0;
 	color:white;
+	visibility: visible;
 }
 
 .main_name {
@@ -67,37 +77,50 @@ nav li:nth-child(4) a:hover {
 
 
 .main_photo {
-	background: url('public/zoe.jpg') no-repeat -95px 10%;
+	background: url('public/zoe.jpg') no-repeat -63px 10%;
 	background-size: 132%;
-	width:300px;
-	height:300px;
+	width:200px;
+	height:200px;
 	border-radius:50%;
-	/*border:10px solid #333333;*/
+	border:5px solid #73a9c2;
 	margin: 0 auto;
 }
 
 
-/*.coca_back {
+.header_photo {
 	background: url('public/spraying coca.jpg') no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 	width:100%;
-	height:500px;
-	/*position:relative;
-	top:50px;
-	/*padding:150px 0;
-	padding-top:70px;
+	height:700px;
+	/*position:relative;*/
+	/*top:50px;*/
+	/*padding:150px 0;*/
+	/*padding-top:70px;*/
 	text-align: center;
 	font-size:2em;
-}*/
+	background-attachment: fixed;
+}
 
-/*.coca_back:before {
+
+
+.header_photo>h1 {
+	color:white;
+	position:absolute;
+	top:300px;
+	left:50px;
+	font-size:2.333em;
+	z-index:1000;
+}
+
+.shade {
 	content:"";
-	background:lightgreen;
+	background:black;
 	position:absolute;
 	width:100%;
-	height:350px;
+	height:700px;
 	opacity:0.33;
-*/
+}
+
 
 /*.coca_back > * {
 	color:white;
@@ -124,7 +147,7 @@ nav li:nth-child(4) a:hover {
 }
 
 .description h3 {
-	font-size:0.9em;
+	font-size:0.8em;
 	text-align:center;
 	color:#8f8f8f;
 	font-family: "Lucida Grande";
@@ -136,14 +159,39 @@ nav li:nth-child(4) a:hover {
 }
 
 .standalone {
-	font-size:1.25em;
-	background: snow;
-	width:200%;
-	padding:20px;
+	font-size:1.1em;
+	/*background: snow;*/
+	width:1100px;
+	padding:40px;
 	position:relative;
-	left: -325px;
+	left: -300px;
 	/*border-radius:20px;*/
 	line-height:1.75em;
 	font-family: "Lucida Grande";
+	color:#8f8f8f;
+	margin:0 auto;
+}
 
+.action {
+	background: #333333;
+	color: white;
+	width:100%;
+	text-align: center;
+	margin-top:50px;
+	padding:20px 0;
+	/*border-radius:7px;*/
+}
+
+button {
+	background: #73a9c2;
+	border:0;
+	width:120px;
+	color:white;
+	padding:10px;
+	border-radius:5px;
+	font-size:1.25em;
+}
+
+button:hover {
+	background:gold;
 }
