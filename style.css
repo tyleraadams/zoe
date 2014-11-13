@@ -4,14 +4,22 @@ body {
 	padding:0;
 	width:100%;
 	color: black;
-	background: snow;
+	background: #fffacd;
 	/*#ffe4c4;*/
 }
 
 ul {
 	list-style-type: none;
-	display:inline;
 	padding:0;
+}
+
+iframe {
+	width:100vw !important;
+	height:100vh !important;
+}
+
+nav>ul {
+	display:inline;
 	position:relative;
 	left:50%;
 }
@@ -21,7 +29,7 @@ a {
 	color:#73a9c2;
 }
 
-li {
+nav li {
 	display:inline;
 	margin-right:50px;
 }
@@ -77,8 +85,8 @@ nav li:nth-child(4) a:hover {
 
 
 .main_photo {
-	background: url('public/zoe.jpg') no-repeat -63px 10%;
-	background-size: 132%;
+	background: url('public/zoe.jpg') no-repeat 20% center;
+	background-size: cover;
 	width:200px;
 	height:200px;
 	border-radius:50%;
@@ -103,14 +111,20 @@ nav li:nth-child(4) a:hover {
 
 
 
-.header_photo>h1 {
+.header_photo>h1, .header_photo>h3 {
 	color:white;
 	position:absolute;
 	top:300px;
 	left:50px;
-	font-size:2.333em;
+	/*font-size:2.333em;*/
 	z-index:1000;
 }
+
+.header_photo>h3 {
+	font-size:0.9em;
+	top:350px;
+}
+
 
 .shade {
 	content:"";
@@ -131,7 +145,7 @@ nav li:nth-child(4) a:hover {
 	margin:0 auto;
 	padding-top:100px;
 	line-height:1.66666em;
-	font-size:1.33333em;
+	font-size:1.10em;
 	color:#333333;
 	text-align: justify;
 	font-family:"Georgia";
